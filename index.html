@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <script src="script.js?$$REVISION$$" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Library</title>
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <h2>Library</h2>
-    <div class="container"></div>
-    <form action="script.js">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+    <div class="library-container">
+       <!--1. This is top of the Webpage -->
+        <header>
+            <div class="library-heading">
+                <h2>LIBRARY</h2>
+            </div>
+       </header>
+
+        <!--2. This is the mainbody of the Webpage -->
+       <main>
+            <button class="newBook">Add book</button>
+            <div class="container"></div>
+       </main>    
+
+
+       <!--3. This is the pop-up with inputs -->
+    <div class="popup-container" id="popup-container">
+       
+        <div class="popup-header">
+            <div class="title">Add New Book</div>
+            <button class="close-button">&times;</button>
+        </div>
+        
+        <div class="popup-body">
+          
+            <div>
+                <label for="fname">Book:</label>
+                <input type="text" id="bookname" name="bookname" placeholder="Book title">
+            </div>
+            
+            <div>
+                <label for="fname">Author:</label>
+                <input type="text" id="authorname" name="authorname" placeholder="Author">
+            </div>
+        
+            <div>
+                <label for="fname">Pages:</label>
+                <input type="text" id="numberofpages" name="numberofpages" placeholder="Pages">
+            </div>
+            <div>
+                <label for="fname">Read:</label>
+                <input type="text" id="read" name="read" placeholder="Read">
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Submit" >
+            </div>
+        </div>
+     </div>
+    <div id="overlay"></div>
+   
 </body>
 </html>
