@@ -46,7 +46,20 @@ header{
     font-size: 15px; 
 }
 
+.card button{
+    display:block; 
+    margin :0 auto; 
+    background-color: #B8DEDC; 
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px 20px;
+    font-size: 1.00rem;
+    font-weight: bold;
+}
 
+.card button:hover{
+    opacity: 0.7;
+}
 
 .newBook{
     display: block; 
